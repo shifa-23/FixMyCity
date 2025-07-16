@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Lightbulb, Trash2, Road, Droplets, TreePine, Wrench } from 'lucide-react';
+import { Lightbulb, Trash2, Construction, Droplets, TreePine, Wrench } from 'lucide-react';
 
 const ServicesSection = () => {
   const ref = useRef(null);
@@ -23,7 +23,7 @@ const ServicesSection = () => {
       color: 'from-green-400 to-emerald-500'
     },
     {
-      icon: Road,
+      icon: Construction,
       title: 'Road Infrastructure',
       description: 'Potholes, damaged pavements, and road maintenance issues',
       color: 'from-gray-400 to-gray-600'
