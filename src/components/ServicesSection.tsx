@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Lightbulb, Trash2, Construction, Droplets, TreePine, Wrench } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ServicesSection = () => {
   const ref = useRef(null);
@@ -49,7 +50,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section ref={ref} className="py-20 px-4">
+    <section ref={ref} className="py-20 px-4" id="services">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -102,13 +103,15 @@ const ServicesSection = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-center mt-16"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-2xl font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transition-all"
-          >
-            Start Reporting Now
-          </motion.button>
+          <Link to="/complaint">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-2xl font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transition-all"
+            >
+              Start Reporting Now
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

@@ -1,9 +1,10 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Upload, Eye, CheckCircle } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Eye, CheckCircle } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
+import ImageUpload from '../components/ImageUpload';
 
 interface ComplaintData {
   type: string;
@@ -16,6 +17,7 @@ const ComplaintForm = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState<Partial<ComplaintData>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const { register, handleSubmit, watch, setValue, formState: { errors } } = useForm<ComplaintData>();
 
   const complaintTypes = [
@@ -31,7 +33,8 @@ const ComplaintForm = () => {
   ];
 
   const onSubmit = (data: ComplaintData) => {
-    setFormData(data);
+    const finalData = { ...data, image: selectedImage };
+    setFormData(finalData);
     setSubmitted(true);
   };
 
@@ -165,22 +168,10 @@ const ComplaintForm = () => {
               className="p-8 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20"
             >
               <h2 className="text-2xl font-bold text-white mb-6">Upload Image (Optional)</h2>
-              <div className="border-2 border-dashed border-white/30 rounded-lg p-8 text-center">
-                <Upload className="w-12 h-12 text-white/60 mx-auto mb-4" />
-                <p className="text-white/80 mb-4">Drag and drop your image here, or click to browse</p>
-                <input
-                  type="file"
-                  accept="image/*"
-                  className="hidden"
-                  id="image-upload"
-                />
-                <label
-                  htmlFor="image-upload"
-                  className="px-6 py-3 bg-blue-500 text-white rounded-lg cursor-pointer hover:bg-blue-600 transition-colors"
-                >
-                  Choose File
-                </label>
-              </div>
+              <ImageUpload 
+                onImageSelect={setSelectedImage}
+                selectedImage={selectedImage}
+              />
             </motion.div>
           )}
 
@@ -210,6 +201,7 @@ const ComplaintForm = () => {
                 <div className="space-y-2 text-white/80">
                   <p><strong>Type:</strong> {watch('type') || 'Not selected'}</p>
                   <p><strong>Description:</strong> {watch('description') || 'No description'}</p>
+                  <p><strong>Image:</strong> {selectedImage ? selectedImage.name : 'No image uploaded'}</p>
                   <p><strong>ID:</strong> {watch('idNumber') || 'Not provided'}</p>
                 </div>
               </div>
