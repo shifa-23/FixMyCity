@@ -33,8 +33,10 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-2"
             >
-             <img src="https://www.ilion.gr/wp-content/uploads/2024/09/fixmycity.png" alt="FixMyCity" className="w-8 h-8 rounded-full" />
-<span className="ml-2 text-xl font-bold text-white">FixMyCity</span>
+             <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                <span className="text-white font-bold text-xl">CS</span>
+              </div>
+              <span className="text-white font-bold text-xl">FixMyCity</span>
 
 {/*               <span className="text-white font-bold text-xl">FixMyCity</span>
             </motion.div> */}
