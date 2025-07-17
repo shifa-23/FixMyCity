@@ -183,11 +183,11 @@ const ComplaintForm = () => {
               exit={{ opacity: 0, x: -100 }}
               className="p-8 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20"
             >
-              <h2 className="text-2xl font-bold text-white mb-6">ID Verification</h2>
+              <h2 className="text-2xl font-bold text-white mb-6">AADHAR Verification</h2>
               <input
                 {...register('idNumber', { required: 'ID number is required' })}
                 type="text"
-                placeholder="Enter your ID number"
+                placeholder="Enter your Aadhar number"
                 className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
               />
               {errors.idNumber && <p className="text-red-400 mt-2">{errors.idNumber.message}</p>}
