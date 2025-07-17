@@ -11,24 +11,24 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      role: 'Community Leader',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b784?w=150&h=150&fit=crop&crop=face',
-      content: 'CitySpark transformed how our neighborhood communicates with city officials. Issues that used to take months are now resolved in weeks.',
+      name: 'Sahil',
+      role: 'Student',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdUgbJFcx16VK49Mg4nytGQzLvK85fVRRGwQ&s',
+      content: 'FixMyCity transformed our neighborhood streetlight with city officials. Issues that used to take months are now resolved in weeks.',
+      rating: 4
+    },
+    {
+      name: 'Ansh',
+      role: 'Farmer',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdUgbJFcx16VK49Mg4nytGQzLvK85fVRRGwQ&s',
+      content: 'I reported broken wire , which was just in front of my house and very dangerous for kids.',
       rating: 5
     },
     {
-      name: 'Michael Chen',
-      role: 'Local Business Owner',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
-      content: 'The intuitive interface made reporting a broken streetlight so easy. The follow-up and resolution was incredibly fast.',
-      rating: 5
-    },
-    {
-      name: 'Emily Rodriguez',
+      name: 'Anaya',
       role: 'Resident & Mother',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
-      content: 'As a parent, I love how this platform helps keep our community safe. The transparency in issue tracking is amazing.',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdUgbJFcx16VK49Mg4nytGQzLvK85fVRRGwQ&s',
+      content: 'As a parent, I love how this platform helps keep our community safe.',
       rating: 5
     }
   ];
@@ -43,10 +43,10 @@ const TestimonialsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            What People <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">Say</span>
+            DEMO: <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">Say</span>
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Real stories from real people who are making their communities better with CitySpark.
+           People will share their Real stories by using FixMyCity.
           </p>
         </motion.div>
 
