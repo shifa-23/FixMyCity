@@ -45,7 +45,7 @@ const Footer = () => {
               <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
                 <span className="text-white font-bold text-xl">CS</span>
               </div>
-              <span className="text-white font-bold text-2xl">CitySpark</span>
+              <span className="text-white font-bold text-2xl">FixMyCity</span>
             </motion.div>
             
             <motion.p
