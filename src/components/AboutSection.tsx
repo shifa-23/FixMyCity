@@ -75,7 +75,7 @@ const AboutSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-600/20"></div>
               <div className="relative z-10">
                 <img
-                  src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=600&h=400&fit=crop"
+                  src="https://i.pinimg.com/originals/e2/89/1a/e2891a60b8c9b60ead0a617eb26411b4.gif"
                   alt="Modern city community"
                   className="w-full h-64 object-cover rounded-xl mb-6"
                 />
