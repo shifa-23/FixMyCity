@@ -28,7 +28,7 @@ const StatsSection = () => {
             Impact by <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">Numbers</span>
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Real results from real communities. See how CitySpark is making a difference 
+            Real results from real communities. See how FixMyCity is making a difference 
             in cities around the world.
           </p>
         </motion.div>
