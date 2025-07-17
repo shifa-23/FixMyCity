@@ -11,7 +11,7 @@ interface AuthModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
-
+ 
 interface FormData {
   name?: string;
   email: string;
