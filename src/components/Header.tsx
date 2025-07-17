@@ -36,10 +36,10 @@ const Header = () => {
              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
                 <span className="text-white font-bold text-xl">CS</span>
               </div>
-              <span className="text-white font-bold text-xl">FixMyCity</span>
+           
 
-{/*               <span className="text-white font-bold text-xl">FixMyCity</span>
-            </motion.div> */}
+              <span className="text-white font-bold text-xl">FixMyCity</span>
+            </motion.div>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
