@@ -19,7 +19,7 @@ const AboutSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            About <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">CitySpark</span>
+            About <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">FixMyCity</span>
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
             We're revolutionizing how citizens connect with their communities. Our platform bridges 
