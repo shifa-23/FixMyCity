@@ -116,16 +116,14 @@ const Footer = () => {
           className="mt-16 pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
         >
           <p className="text-white/60 text-center md:text-left">
-            © 2024 CitySpark. All rights reserved.
+            © 2024 FixMyCity. All rights reserved.
           </p>
           
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2 text-white/60"
           >
-            <span>Made with</span>
-            <Heart className="w-4 h-4 text-red-400 fill-current" />
-            <span>for better communities</span>
+           
           </motion.div>
         </motion.div>
       </div>
