@@ -9,10 +9,10 @@ const StatsSection = () => {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const stats = [
-    { number: '10,000+', label: 'Issues Resolved', suffix: '' },
-    { number: '25,000+', label: 'Active Citizens', suffix: '' },
-    { number: '150+', label: 'Partner Cities', suffix: '' },
-    { number: '98%', label: 'Satisfaction Rate', suffix: '' }
+    { number: 'X+', label: 'Issues Resolved', suffix: '' },
+    { number: 'X+', label: 'Active Citizens', suffix: '' },
+    { number: 'X+', label: 'Partner Cities', suffix: '' },
+    { number: 'X%', label: 'Satisfaction Rate', suffix: '' }
   ];
 
   return (
@@ -25,11 +25,10 @@ const StatsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Impact by <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">Numbers</span>
+            After launch <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">Numbers</span>
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Real results from real communities. See how FixMyCity is making a difference 
-            in cities around the world.
+           In Future Real results from real communities will display here:.
           </p>
         </motion.div>
 
