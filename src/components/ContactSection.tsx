@@ -13,19 +13,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      content: 'hello@cityspark.com',
-      link: 'mailto:hello@cityspark.com'
+      content: 'hello@FixMyCity.com',
+      link: 'mailto:hello@FixMyCity.com'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      content: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      content: '+91 1245678943',
+      link: 'tel:7892984894'
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      content: '123 Innovation Drive, Tech City, TC 12345',
+      content: '123 Uttar Pradesh',
       link: '#'
     },
     {
